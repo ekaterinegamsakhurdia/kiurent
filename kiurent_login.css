@@ -31,12 +31,14 @@
   /* MAIN CONTAINER */
   .login-container {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.537);
+    background-color: rgba(255, 255, 255, 0.682);
     margin: 0 auto;
     margin-top: 2%;
     width: 60%;
     padding: 2%;
     justify-content: space-between;
+    border-radius: 20px;
+
   }
 
   .form-fieldset {
@@ -103,7 +105,7 @@
     width: 100%;
     padding: 3%;
     margin-top: 3%;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   
   .input-field:focus {
@@ -119,9 +121,9 @@
     margin-left: 35%;
     padding: 0.5rem 1.5rem;
     width: 30%;
+    border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #1b3d6b;
-    cursor: pointer;
   }
   
   .login-button:hover {
