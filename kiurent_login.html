@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Haven" />
   <meta name="language" content="English" />
-  <meta name="rating" content="Safe for kids" />
-  <link rel="stylesheet" href="kiurent_login.css">
-  <title>KIU-rent</title>
+  <meta name="rating" content="safe for kids" />
+  <link rel="stylesheet" href="kiurent_registration.css" />
+  <script defer src="kiurent_registration_validation.js"></script>
+  <title>KIU-rent | Sign Up</title>
+
 </head>
-<body class="login-page">
 
-  <header class="site-header">
-    <h1 class="site-title">KIU - rent</h1>
-  </header>
+<body class="registration-page">
 
-  <main class="login-container">
+  <div class="registration-container">
+    <form action="register.php" method="post" class="registration-form">
+        <div class="form-box">
+            <div class="form-title">Sign up here</div>
 
-    <section class="info-section">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Kutaisi_International_University_Logo.svg/2560px-Kutaisi_International_University_Logo.svg.png" alt="KIU Logo" class="uni-logo" width="500">
-      <p class="platform-description">
-        KIU-rent is a campus rental platform that enables students and staff to rent or lend items such as textbooks, electronics, and bicycles, fostering a convenient and cost-effective community exchange.
-      </p>
-    </section>
+            <label class="form-label">First Name</label>
+            <input type="text" name="first_name" class="form-input"  />
 
-    <section class="form-section">
-        <form action="homepage.html" method="get" class="login-form" target="_blank">
-          <fieldset class="form-fieldset">
-            <legend class="form-legend">Log in here</legend>
-      
-            <label class="input-label" for="email">Email Address</label>
-            <input type="email" id="email" name="login" class="input-field" required autofocus>
-      
-            <label class="input-label" for="password">Password</label>
-            <input type="password" id="password" name="login" class="input-field" required>
-      
-            <button type="submit" class="login-button">Log In</button>
-          </fieldset>
-        </form>
-      </section>
-      
+            <label class="form-label">Last Name</label>
+            <input type="text" name="last_name" class="form-input"  />
 
-  </main>
+            <label class="form-label">Phone Number</label>
+            <input type="tel" name="phone" class="form-input"  />
 
-  <footer class="site-footer">
-    <a href="registration.html" class="signup-link" target="_blank">
-      <p class="signup-text">Don't have an account?</p>
-    </a>
-  </footer>
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@kiu\.edu\.ge$" class="form-input"  />
+
+            <label class="form-label">Password</label>
+            <input type="password" name="password" class="form-input"  />
+                <div class="status-box">
+                    <label class="form-label">Status</label>
+                    <div class="checkbox-group">
+                    <label><input type="checkbox" name="status[]" value="student" /> Student</label>
+                    <label><input type="checkbox" name="status[]" value="staff" /> Staff</label>
+                    <label><input type="checkbox" name="status[]" value="student_assistant" /> Student Assistant</label>
+                    <label><input type="checkbox" name="status[]" value="teaching_assistant" /> Teaching Assistant</label>
+                </div>
+                <a href="homepage.html" target="_blank">
+            <button type="submit" class="signup-btn">Sign Up</button>
+                </a>
+        </div>
+    </form>
+  </div>
+
 
 </body>
 </html>
