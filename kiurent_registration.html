@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Haven" />
+  <meta name="language" content="English" />
+  <meta name="rating" content="safe for kids" />
+  <link rel="stylesheet" href="kiurent_registration.css" />
+  <script defer src="kiurent_registration_validation.js"></script>
+  <title>KIU-rent | Sign Up</title>
+
+</head>
+
+<body class="registration-page">
+
+  <div class="registration-container">
+    <form action="register.php" method="post" class="registration-form">
+        <div class="form-box">
+            <div class="form-title">Sign up here</div>
+
+            <label class="form-label">First Name</label>
+            <input type="text" name="first_name" class="form-input"  />
+
+            <label class="form-label">Last Name</label>
+            <input type="text" name="last_name" class="form-input"  />
+
+            <label class="form-label">Phone Number</label>
+            <input type="tel" name="phone" class="form-input"  />
+
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@kiu\.edu\.ge$" class="form-input"  />
+
+            <label class="form-label">Password</label>
+            <input type="password" name="password" class="form-input"  />
+                <div class="status-box">
+                    <label class="form-label">Status</label>
+                    <div class="checkbox-group">
+                    <label><input type="checkbox" name="status[]" value="student" /> Student</label>
+                    <label><input type="checkbox" name="status[]" value="staff" /> Staff</label>
+                    <label><input type="checkbox" name="status[]" value="student_assistant" /> Student Assistant</label>
+                    <label><input type="checkbox" name="status[]" value="teaching_assistant" /> Teaching Assistant</label>
+                </div>
+                <a href="homepage.html" target="_blank">
+            <button type="submit" class="signup-btn">Sign Up</button>
+                </a>
+        </div>
+    </form>
+  </div>
+
+
+</body>
+</html>
