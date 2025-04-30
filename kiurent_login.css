@@ -9,7 +9,7 @@
   }
   
   .login-page {
-    background-image: url('loginpage.jpg');
+    background-color: #002D72;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -17,13 +17,13 @@
   /* HEADER */
   .site-header {
     text-align: center;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 2%;
+    margin-bottom: 3%;
   }
   
   .site-title {
     font-weight: bold;
-    font-size: 500%;
+    font-size: 400%;
     color: #f8f9fa;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
@@ -31,28 +31,28 @@
   /* MAIN CONTAINER */
   .login-container {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.682);
+    background-color: rgba(255, 255, 255, 0.804);
     margin: 0 auto;
     margin-top: 2%;
     width: 60%;
-    padding: 2%;
+    padding: 3%;
     justify-content: space-between;
     border-radius: 20px;
 
   }
 
   .form-fieldset {
-    border: 2px solid #1b3d6b;
+    border: 2px solid #002D72;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 2%;
     text-align: left;
   }
   
   .form-legend {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #1b3d6b;
-    padding: 0 1rem;
+    color: #002D72;
+    padding: 3%;
   }
   
   
@@ -71,7 +71,7 @@
   }
   
   .platform-description {
-    border-top: 2px solid rgb(0, 37, 69);
+    border-top: 2px solid #002D72;
     padding-top: 5%;
     color: rgb(0, 37, 69);
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -97,7 +97,7 @@
   .input-label {
     display: block;
     margin-top: 1rem;
-    color: #1b3d6b;
+    color: #002D72;
     text-align: left;
   }
   
@@ -110,17 +110,18 @@
   
   .input-field:focus {
     background-color: #1b3e6b30;
+    border:2px solid #1A1A2E;
   }
   
   .input-field:hover {
-    border: 2px solid rgb(10, 35, 133);
+    border: 2px solid #5B9BD5;
   }
   
   .login-button {
     margin-top: 2rem;
     margin-left: 35%;
     padding: 0.5rem 1.5rem;
-    width: 30%;
+    width: 40%;
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #1b3d6b;
